@@ -3,9 +3,6 @@ import Title from "./components/Title";
 import Form from "./components/Form";
 import Results from "./components/Results";
 import Copy from "./components/Copy";
-// import Loading from './components/Loading'
-// import viteLogo from '/vite.svg'
-// import './App.css'
 type ResultsState = {
   zipcode: string;
   address1: string;
@@ -57,7 +54,6 @@ const App = () => {
       <Form setZipcode={setZipcode} getZipcode={getZipcode} />
       <Results results={results} />
       <Copy />
-      {/* {loading && <Loading/>} */}
     </>
   );
 };
