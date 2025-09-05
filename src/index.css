@@ -1,3 +1,6 @@
+html {
+  font-size: 62.5%;
+}
 body {
   background-image: url(assets/img/backgroundImage.png);
   background-size: cover;
@@ -6,26 +9,25 @@ body {
   align-content: center;
 }
 #root {
-  margin: 0 auto;
+  margin: 30px auto;
   width: 315px;
   height: 100%;
 }
 h1 {
   text-align: center;
   font-family: Stardos Stencil;
+  font-size: 4rem;
 }
 form {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   margin: 25px auto;
   background-color: #ff9900;
   padding: 10px;
   border-radius: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 input,
 button {
@@ -33,13 +35,18 @@ button {
   border: none;
   aspect-ratio: 1.6/1;
   padding: 5px;
+  background-color: #fff;
 }
 input {
   height: 30px;
+  width: 180px;
 }
 button {
-  background-color: #fff;
   cursor: pointer;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  background-color: #87ceeb;
 }
 button:hover {
   opacity: 0.5;
@@ -56,6 +63,9 @@ button:hover {
 h2 {
   width: 295px;
 }
+.addressinfo div {
+  font-size: 1.4rem;
+}
 .results {
   background-color: #fff;
   border: 5px solid #ff9900;
@@ -63,10 +73,12 @@ h2 {
   box-shadow: 10px 10px 10px 0px rgba(255, 153, 0, 0.6);
   padding: 5px;
   margin-bottom: 30px;
+  width: 100%;
 }
 h2 {
   margin-top: 0;
   border-bottom: 5px solid rgba(167, 122, 91, 0.302);
+  font-size: 1.6rem;
 }
 iframe {
   width: 100%;
@@ -81,8 +93,8 @@ small {
   #root {
     width: 700px;
   }
-  .results {
-    width: 680px;
+  form {
+    flex-direction: row;
   }
   h2 {
     width: 100%;
@@ -100,9 +112,6 @@ small {
   @media screen and (min-width: 1440px) {
     #root {
       width: 1000px;
-    }
-    .results {
-      width: 980px;
     }
     .addressinfo div,
     .addressinfo div p {
