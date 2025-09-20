@@ -13,7 +13,6 @@ type ResultsState = {
   kana3: string;
 };
 const App = () => {
-  // const [loading, setLoading] = useState<boolean>(false);
   const [zipcode, setZipcode] = useState<string>("");
   const [results, setResults] = useState<ResultsState>({
     zipcode: "",
@@ -26,13 +25,11 @@ const App = () => {
   });
   const getZipcode = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // setLoading(true);
     fetch(`https://zipcloud.ibsnet.co.jp/api/search?zipcode=${zipcode}`)
       .then((res) => res.json())
       .then((data) => {
         if (!data.results) {
           alert("該当する住所が見つかりませんでした。");
-          // setLoading(false);
           return;
         }
         setResults({
@@ -44,7 +41,6 @@ const App = () => {
           kana2: data.results[0].kana2,
           kana3: data.results[0].kana3,
         });
-        // setLoading(false);
       });
   };
 
