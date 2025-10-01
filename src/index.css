@@ -84,6 +84,14 @@ iframe {
   width: 100%;
   aspect-ratio: 1.6/1;
 }
+.manualTitle,
+.manual img {
+  width: 100%;
+}
+.manualTitle {
+  text-align: center;
+  font-size: 3.2rem;
+}
 small {
   display: block;
   margin-bottom: 30px;

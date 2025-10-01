@@ -2,6 +2,7 @@ import { useState } from "react";
 import Title from "./components/Title";
 import Form from "./components/Form";
 import Results from "./components/Results";
+import Manual from "./components/Manual";
 import Copy from "./components/Copy";
 type ResultsState = {
   zipcode: string;
@@ -49,6 +50,7 @@ const App = () => {
       <Title />
       <Form setZipcode={setZipcode} getZipcode={getZipcode} />
       <Results results={results} />
+      <Manual />
       <Copy />
     </>
   );
