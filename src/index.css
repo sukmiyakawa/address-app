@@ -85,6 +85,9 @@ iframe {
   width: 100%;
   aspect-ratio: 1.6/1;
 }
+.manual {
+  margin-top: 150px;
+}
 .manualTitle,
 .manual img {
   width: 100%;
