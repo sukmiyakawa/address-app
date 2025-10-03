@@ -2,7 +2,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-image: url(assets/img/backgroundImage.png);
+  background-image: url(public/backgroundImage.png);
   background-size: cover;
   min-height: 100vh;
   margin: auto 0;
