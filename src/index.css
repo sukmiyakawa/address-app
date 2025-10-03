@@ -78,6 +78,7 @@ h2 {
 h2 {
   margin-top: 0;
   border-bottom: 5px solid rgba(167, 122, 91, 0.302);
+  font-family: Stardos Stencil;
   font-size: 1.6rem;
 }
 iframe {
@@ -89,6 +90,7 @@ iframe {
   width: 100%;
 }
 .manualTitle {
+  border-bottom: none;
   text-align: center;
   font-size: 3.2rem;
 }
@@ -96,6 +98,7 @@ small {
   display: block;
   margin-bottom: 30px;
   text-align: center;
+  margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
   #root {
